@@ -90,4 +90,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: ${{ github.workspace }} успешно выполнен!
+          message: ${{github.event.name }} для ${{ github.workspace }} успешно выполнен!
