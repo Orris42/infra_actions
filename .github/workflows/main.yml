@@ -1,5 +1,5 @@
 # .github/workflows/**main.yml**
-name: Django-app workflow
+name: Infra_actions workflow
 
 on: [push]
 
@@ -90,4 +90,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: ${{ github.event.name }} для ${{ repo }} успешно выполнен!
+          message: ${{ github.workflow }} успешно выполнен!
